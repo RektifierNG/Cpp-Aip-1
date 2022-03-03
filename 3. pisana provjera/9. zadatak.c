@@ -11,13 +11,14 @@ V=1/3  r^2  π h
  */
 
 int main(){
-    float sirina, postotak_promjene;
+    float sirina, visina, postotak_promjene;
     printf("unesi sirinu osnovice i visinu stosca\n");
     scanf("%f", &sirina);
     printf("unesi postotak povecanja ili smanjenja\n");
     scanf("%f", &postotak_promjene);
     sirina*=(1+postotak_promjene/100);
-    float volumen= 1/3 *sirina/2 *sirina/2 *3.14;
+    visina*=(1+postotak_promjene/100);
+    float volumen= 1/3 *sirina/2 *sirina/2 *3.14* visina;
 
     printf("Oplosje nakon promjene iznosi %.2f", volumen);
 
